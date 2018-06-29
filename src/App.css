@@ -1,0 +1,36 @@
+/* 
+orange : #FFA240
+bleu foncé : #0988B2
+bleu clair : #40CFFF
+orange clair : #FFAE5A
+marron : #B2681B
+*/
+
+
+.container {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.homepage {
+  display: flex;
+  align-items: start;
+}
+
+.list-starships {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-starships .thumb-starship {
+  margin: 10px;
+}
+
+.cart {
+  min-width: 250px;
+  background-color: lightgray;
+}
+
+.cart h2 {
+  text-align: center;
+}
