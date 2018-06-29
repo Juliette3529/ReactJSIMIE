@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import getStarshipImage from "../swapi-images";
 import Starship from "./Starship";
 
 class ListStarships extends Component {
 
   render() {
     const items = this.props.starships.map(starship => (
-      <Starship starship={starship}/>
+      <Starship key={starship.url} starship={starship} editStarship={(starship, action) => this.props.editStarship(starship, action)}/>
     ));
 
     const loading = (items.length > 0) ? '' : 'Chargement en cours...';
